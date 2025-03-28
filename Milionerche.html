@@ -531,7 +531,7 @@
     
     // Start game on button click – load CSV questions and then start
     startBtn.addEventListener("click", function () {
-      loadCSVQuestions("questions.csv", () => {
+      loadCSVQuestions("https://raw.githubusercontent.com/momche/millionaire/refs/heads/main/questions.csv", () => {
         questions = gameQuestions.slice();
         startScreen.classList.add('hidden');
         gameScreen.classList.remove('hidden');
